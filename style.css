@@ -1,0 +1,207 @@
+:root {
+    --font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family)
+}
+
+/* navigation bar */
+
+body {
+    background-color: black;
+}
+
+#language {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.signin {
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin: 8px;
+    padding: 6px 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 28px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+
+/* .first */
+.first {
+    display: flex;
+    background-image: url(assests/backgrounds/bg4\ copy.jpg);
+    width: 94vw;
+    height: 80vh;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 24px;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    position: relative;
+}
+
+.first .txt1 {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50px;
+    margin-left: 50px;
+    bottom: 20px;
+}
+
+.first .txt1 div:first-child {
+    color: white;
+    font-size: 52px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px black;
+
+}
+
+.first .txt1 div:nth-child(2) {
+    text-shadow: 2px 2px 0px black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.second {
+    text-align: center;
+    margin: 16px;
+    align-content: center;
+}
+
+.second .txt2 {
+    margin: 12px;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+.second .email input {
+    color: white;
+    background-color: transparent;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 160px;
+    border: 2px solid white;
+    border-radius: 28px;
+}
+
+.second .email .getStarted {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: 2px solid rgb(229, 9, 20);
+    padding: 10px 64px;
+    border-radius: 28px;
+}
+
+.third {
+    width: 80vw;
+    justify-self: center;
+}
+
+.third h2 {
+    color: white;
+    font-family: var(--font-family);
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.third .grid .img img {
+    border-radius: 1rem;
+    width: 185px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: center;
+    gap: 20px;
+}
+
+/* .third .grid .img img:hover{
+    width: 200px;
+} */
+
+.forth {
+    width: 80vw;
+    justify-self: center;
+}
+
+.forth .head {
+    color: white;
+    font-family: var(--font-family);
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.forth .container {
+    justify-content: center;
+    display: flex;
+    gap: 13px;
+}
+
+.forth .container .c {
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 250px;
+    height: 137px;
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 900;
+    padding: 16px;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    
+}
+
+@media only screen and (max-width: 1005px) {
+    .first .txt1 {
+        left: 0%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        bottom: 0%;
+    }
+
+    .first .txt1 div:first-child {
+        font-size: 32px;
+        position: relative;
+    }
+
+    .third .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+        gap: 20px;
+    }
+
+    .forth .container .c{
+        height: 180px;
+    }
+
+}
